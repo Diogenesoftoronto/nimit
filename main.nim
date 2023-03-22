@@ -45,7 +45,7 @@ proc validateCommit(commit: string): bool {.raises: [OSError, IOError, Exception
     while q.readRow():
         for col in items(q.headers):
             if col != "Word":
-                continue    
+                continue
             var val = q.rowEntry(col)
             # remove empty spaces from a string
             if commit.strip.startsWith(val):
