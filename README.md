@@ -1,6 +1,6 @@
 # Nimmits
 
-A library for standarizing and linting commits.
+A library for standardizing and linting commits.
 
 Considering creating this for Golang as well, but I believe Nim is more suited to scripting.
 
