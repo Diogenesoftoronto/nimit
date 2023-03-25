@@ -5,6 +5,14 @@ A tool for standardizing and linting commits.
 Considering creating this for Golang as well, but I believe Nim is more suited to scripting.
 
 This tool is highly inspired by husky and cbeam's [article](https://cbea.ms/git-commit/).
+
+## Features (coming soon :))
+- Check if your commit messages are too long.
+- Add rules to lint your commit message.
+- suggest commit messages that better capture what your code does.
+- set limits on how large your commits should be
+- Integrate Nimit with your favorite code editor or IDE
+
 ## Getting started
 
 You will need to install nim. This program allows you to emit
