@@ -4,6 +4,7 @@ A tool for standardizing and linting commits.
 
 Considering creating this for Golang as well, but I believe Nim is more suited to scripting.
 
+This tool is highly inspired by husky and cbeam's [article](https://cbea.ms/git-commit/).
 ## Getting started
 
 You will need to install nim. This program allows you to emit
@@ -41,7 +42,4 @@ Nimble is coming with a simpler set of installation instructions.
 
 Currently this is targeted to linux since git only works with unix* machines. 
 
-May work with macos but no guarantees.
-
-
-This tool is highly inspired by husky and cbeam's [article](https://cbea.ms/git-commit/).
+May work with MACOS, no guarantees at the moment.
