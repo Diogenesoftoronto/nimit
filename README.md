@@ -1,4 +1,4 @@
-# Nimits
+# Nimit
 
 A tool for standardizing and linting commits.
 
