@@ -4,7 +4,7 @@ A tool for standardizing and linting commits.
 
 Considering creating this for Golang as well, but I believe Nim is more suited to scripting.
 
-The reason behind this tool emerged after constantly getting my pull requests getting reject because of something minor like incorrect spelling or because 
+The reason behind this tool emerged after constantly getting my pull requests rejected because of something minor like incorrect spelling or because 
 it was over 50 characters. Something I believe could be easily checked by a computer. I also wanted to make sure my commits in my other open source projects could be easily checked so that other developers would not have to read over a commit to make sure it was good. I wanted to build a tool that would solve this problem and that would integrate well with ci and my editor. The vision for that tool realised (hopefully) is Nimit. Nimit is designed to be a no nonsense performant linter of commits you can plug straight into ci with very little dependencies.
 
 This tool is highly inspired by husky and cbeam's [article](https://cbea.ms/git-commit/).
