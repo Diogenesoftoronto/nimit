@@ -31,6 +31,12 @@ Compile the program.
 nim c main.nim
 ```
 
+Run the program, and consider adding it to your $PATH env variable
+
+```sh
+./main
+```
+
 Nimble is coming with a simpler set of installation instructions.
 
 Currently this is targeted to linux since git only works with unix* machines. 
