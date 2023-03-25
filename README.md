@@ -20,7 +20,8 @@ a js version of the code so that you can stick with node as a dependency and not
 
 ## Installation
 
-### Installation from source (you'll need to do this if you plan to contribute!)
+### Installation from source 
+__(you'll need to do this if you plan to contribute!)__
 This requires nim to work.
 
 First, clone the repository. 
