@@ -6,7 +6,7 @@ Considering creating this for Golang as well, but I believe Nim is more suited t
 
 This tool is highly inspired by husky and cbeam's [article](https://cbea.ms/git-commit/).
 
-## Features (coming soon :))
+## Features
 - Check if your commit messages are too long.
 - Add rules to lint your commit message.
 - suggest commit messages that better capture what your code does.
