@@ -39,9 +39,6 @@ a js version of the code so that you can stick with node as a dependency and not
 
 - [Nim](https://nim-lang.org/install.html)
 - [Git](https://git-scm.com/downloads)
-- [Vale](https://vale.sh/docs/vale-cli/installation/)
-
-NOTE: I plan on removing the vale dependency in the future.
 
 ### Installation from source
 
@@ -64,13 +61,13 @@ cd nimit
 Compile the program.
 
 ```sh
-nim c main.nim
+nim c -d:release -o:bin/nimit src/commit.nim
 ```
 
 Run the program, and consider adding it to your $PATH env variable
 
 ```sh
-./main
+./bin/nimit
 ```
 
 Nimble is coming with a simpler set of installation instructions.
