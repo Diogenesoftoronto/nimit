@@ -107,7 +107,7 @@ proc getCommit*(file: string, pronouns, verbs: string): seq[CommitErr] {.raises:
                 var start = "commit ".len
                 r.hash = line[start..^1]
             elif i == 4:
-                # check if the subject line is over 50 characters
+                # Check if the subject line is over 50 characters
                 if line.strip.len > 50:
                     r.commit = line.strip
                     r.line = i
@@ -172,7 +172,9 @@ proc Nimit*(prettyPrint: bool = false, dir: string = ".", file: string = "tmp.co
             else:
                 echo err
         if errs.len > 0:
-            raise newException(NimitError, fmt"Nimit found {errs.len}")
+            raise newException(NimitError, fmt"Nimit found {errs.len} error(s)")
+    except NimitError:
+        raise
     except OSError, IOError:
         raise newException(Exception, "Create commit or get commit failed")
 
