@@ -152,6 +152,7 @@ proc prettyPrintError(error: CommitErr): string =
 
 type 
     DirNotFoundError = object of OSError
+    NimitError = object of OSError
 
 proc Nimit*(prettyPrint: bool = false, dir: string = ".", file: string = "tmp.commit", amount: Natural = 1, all: bool = false, since: string = "", until: string = "", gitHash: string  = "", pronouns: string = pronounDataDefault, verbs: string = verbDataDefault) {.raises: [DirNotFoundError, Exception] } =    
     if dirExists(dir) == false:
@@ -170,6 +171,8 @@ proc Nimit*(prettyPrint: bool = false, dir: string = ".", file: string = "tmp.co
                 echo prettyPrintError(err)
             else:
                 echo err
+        if errs.len > 0:
+            raise newException(NimitError, fmt"Nimit found {errs.len}")
     except OSError, IOError:
         raise newException(Exception, "Create commit or get commit failed")
 
